@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-white text-center text-sm py-2">
+        Sign up and get 20% off on your first order. <a href="#" class="underline">Sign Up Now</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">
+                <span class="text-black">SHOP.CO</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <li class="relative group">
+                    <a href="#" class="hover:text-black flex items-center">
+                        Shop <span class="ml-1">&#9662;</span>
+                    </a>
+                    <!-- Dropdown -->
+                    <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Men</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Women</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-black">On Sale</a></li>
+                <li><a href="#" class="hover:text-black">New Arrivals</a></li>
+                <li><a href="#" class="hover:text-black">Brands</a></li>
+            </ul>
+
+            <!-- Search & Icons -->
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search for products..." class="hidden md:block border rounded-full px-4 py-1 w-60">
+                <a href="#" class="text-gray-700 hover:text-black">🛒</a>
+                <a href="#" class="text-gray-700 hover:text-black">👤</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
